@@ -10,12 +10,37 @@
 </head>
 
 <body>
-    <h1>Etch-A-Sketch</h1>
+    <header>
+        <h1>Etch-A-Sketch</h1>
+        <button id="how-to-play"><span>?</span></button>
+    </header>
+    <div class="how-to-play-info">
+        <ol>
+            <h3>----How to Play----</h3>
+            <li>Reset Grid Button: Asks you to set a new size for the grid (a x a)</li>
+            <li>Clear Button: Clears the entire grid.</li>
+            <li>Progressive Darken: It clears the grid and sets the initial opacity of the grid boxes to 10% and progressively increases to 100% on exactly 10 interactions and then resets back to 0.1.</li>
+            <li>Color Mode: It clears the grid and resets opacity to 1.</li>
+            <li>Draw in Black: It sets the brush color to black. (Default is Multi Color)</li>
+            <li>Custom Color: Lets you choose your own brush color.</li>
+            <li>Multi Color: Switches back to multi color mode.</li>
+            <li>When Progressive Darken mode is active, any other brush color selection will have an initial opacity of 0.1. To switch back to full opacity, click on Color Mode button.</li>
+        </ol>
+    </div>
     <div class="btn-container">
-        <button id="new-grid">New Grid Size</button>
-        <button id="darken">Darken on each interaction</button>
-        <button id="default">Default Hover</button>
-        <button id="clear-grid">Clear Grid</button>
+        <div class="one">
+            <button id="new-grid">Reset Grid</button>
+            <button id="clear-grid">Clear Grid</button>
+        </div>
+        <div class="two">
+            <button id="darken">Progressive Darken</button>
+            <button id="default">Color Mode</button>
+        </div>
+        <div class="color-btns">
+            <button id="black-clr">Draw in Black</button>
+            <button id="clr-choice">Custom Color<input type="color" name="" id="color-palette"></button>
+            <button id="multi-clr">Multi Color</button>
+        </div>
     </div>
     <div class="container"></div>
 </body>
