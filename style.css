@@ -33,13 +33,17 @@ h1 {
     left: 20px;
     top: 20px;
     background-color: rgb(243, 72, 72);
-    padding: 16px 8px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #how-to-play span{
     border: 2px solid white;
     border-radius: 50%;
-    padding: 8px 10px;
+    padding: 10px 14px;
 }
 
 .how-to-play-info {
@@ -48,8 +52,8 @@ h1 {
     background-color: #3a3a3a;
     color: white;
     position: absolute;
-    left: 30px;
-    top: 75px;
+    left: 45px;
+    top: 85px;
     padding: 30px;
     opacity: 0.9;
     transition: visibility 0.2s ease;
@@ -93,8 +97,12 @@ button {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    height: 60px;
 }
-
+.color-btns{
+    display: flex;
+    gap: 4px;
+}
 #new-grid {
     background-color: #264653;
 }
@@ -221,9 +229,9 @@ button:active {
 }
 @media (max-width: 619px) {
     .grid-box {
-        width: calc((500px - 4px) / 16);
+        width: calc((560px - 4px) / 16);
         /* fewer boxes or tighter layout */
-        height: calc((500px - 4px) / 16);
+        height: calc((560px - 4px) / 16);
     }
 
     h1 {
@@ -232,8 +240,8 @@ button:active {
     }
     .container{
         width: 100%;
-        max-width: 500px;
-        max-height: 500px;
+        max-width: 560px;
+        max-height: 560px;
         height: 100%;
     }
     .btn-container {
@@ -241,7 +249,4 @@ button:active {
         align-items: center;
     }
 }
-.color-btns{
-    display: flex;
-    gap: 4px;
-}
+
